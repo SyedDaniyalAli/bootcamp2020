@@ -27,6 +27,6 @@ jobs:
       with:
         node-version: 12
     - name: Installing Surge
-      run: npm install -g -surge
+      run: npm install -g surge
     - name:  Running Surge
       run: surge ./ sda.surge.sh --token ${{secrets.SURGE_TOKEN}}
